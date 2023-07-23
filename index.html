@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Umarovnews</title>
+
+  <link rel="stylesheet" href="/css/style.css">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Unbounded:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="/js/tawilwind.config.js"></script>
+</head>
+<body>
+  <header class="w-full p-2 bg-primary mb-20 sm:mb-0">
+    <div class="wrapper flex items-center justify-between relative">
+      <div class="logo md:w-1/4 lg:w-1/5 2xl:w-1/6 flex 2xl:pl-8 xl:pl-6" style="min-width: 146px;">
+        <img class="max-w-full" src="/assets/images/logo.png" alt="Umarovnews">
+      </div>
+      <div class="md:w-3/4 lg:w-4/5 2xl:w-5/6 flex items-center justify-end sm:justify-between px-2 md:px-4 left-1 gap-2">
+        <div class="hidden sm:block text-xs md:text-base font-secondary font-bold">
+          <div>новости</div>
+          <div>интервью</div>
+          <div>расследования</div>
+        </div>
+        <div class="sm:static absolute left-0 top-14 w-full sm:w-3/5">
+          <div class="relative flex items-center gap-4 rounded-full bg-white py-1 px-4 h-14 border sm:border-none">
+            <img class="h-6 aspect-square" src="/assets/icons/search.svg" alt="search">
+            <input class="w-full focus:border-none focus:outline-none" type="text" placeholder="День столицы...">
+          </div>
+        </div>
+        <div class="flex items-center gap-2">
+          <img class="h-9" src="/assets/images/kazakh.png" alt="kazakh language">
+          <span class="hidden md:inline">Қазақша</span>
+        </div>
+        <div class="flex md:hidden hamburger">
+          <div></div>
+        </div>
+      </div>
+    </div>
+  </header>
+  <main class="wrapper flex items-start justify-between">
+    <nav class="fixed z-10 md:sticky md:w-1/4 lg:w-1/5 2xl:w-1/6 top-[3.35rem] md:top-0 -right-full md:left-0 transition-all" style="min-width: 146px;">
+      <ul class="w-52 bg-white md:w-full shadow-xl flex flex-col py-3 md:py-6 rounded-3xl md:rounded-none">
+        <li class="gradient-bg 2xl:pl-14 xl:pl-12 md:pl-2 pl-8 py-2 md:py-4">
+          новости
+        </li>
+        <li class="gradient-bg 2xl:pl-14 xl:pl-12 md:pl-2 pl-8 py-2 md:py-4">
+          репортажи
+        </li>
+        <li class="gradient-bg 2xl:pl-14 xl:pl-12 md:pl-2 pl-8 py-2 md:py-4">
+          интервью
+        </li>
+        <li class="gradient-bg 2xl:pl-14 xl:pl-12 md:pl-2 pl-8 py-2 md:py-4">
+          история
+        </li>
+        <li class="gradient-bg 2xl:pl-14 xl:pl-12 md:pl-2 pl-8 py-2 md:py-4">
+          общество
+        </li>
+        <li class="gradient-bg 2xl:pl-14 xl:pl-12 md:pl-2 pl-8 py-2 md:py-4">
+          политика
+        </li>
+        <li class="gradient-bg 2xl:pl-14 xl:pl-12 md:pl-2 pl-8 py-2 md:py-4">
+          мнение
+        </li>
+        <li class="gradient-bg 2xl:pl-14 xl:pl-12 md:pl-2 pl-8 py-2 md:py-4">
+          расследования
+        </li>
+        <li class="bg-primary my-2 md:my-6 w-full h-px"></li>
+        <li class="gradient-bg 2xl:pl-14 xl:pl-12 md:pl-2 pl-8 py-2 md:py-4">
+          о нас
+        </li>
+        <li class="gradient-bg 2xl:pl-14 xl:pl-12 md:pl-2 pl-8 py-2 md:py-4">
+          контакты
+        </li>
+      </ul>
+    </nav>
+    <div class="w-full md:w-3/4 lg:w-4/5 2xl:w-5/6">
+      <section class="main-box-container flex flex-col md:flex-row items-end justify-between gap-4 md:px-4">
+        <div class="md:w-3/5 w-full aspect-video md:h-4/5">
+          <div class="main-box w-full h-full p-4 bg-fade flex flex-col justify-end text-white">
+            <img class="bg-image" src="/assets/images/img1.jpg" alt="Some image">
+            <div class="text-xl md:text-2xl font-bold">
+              День столицы в Казахстане
+            </div>
+            <div class="text-base mt-3 mb-6">
+              Как казахстанцы отмечают праздник, какие проводятся мероприятия...
+            </div>
+            <div class="flex gap-2">
+              <img src="/assets/icons/clock.svg" alt="Clock">
+              07.07.2023 9:30
+            </div>
+          </div>
+        </div>
+        <div class="w-full md:w-2/5 md:h-4/5 bg-primary flex flex-col pt-6 pb-4" style="min-height: 300px;">
+          <div class="text-2xl font-bold font-secondary px-4 mb-4">
+            За последние сутки
+          </div>
+          <div class="flex gap-3 md:block w-full max-h-full overflow-x-scroll md:overflow-x-hidden md:overflow-y-scroll custom-scrollbar px-4 md:px-3 relative md:left-1">
+            <div class="p-4 w-full box aspect-video bg-fade flex flex-col justify-end text-white md:mb-4">
+              <img class="bg-image" src="/assets/images/img2.jpg" alt="Some image">
+              <div class="font-bold mb-2">
+                Рост цен на коммунальные услуги ударит по благополучию казахстанцев...
+              </div>
+              <div class="flex gap-2">
+                <img src="/assets/icons/clock.svg" alt="Clock">
+                07.07.2023 9:30
+              </div>
+            </div>
+            <div class="p-4 w-full box aspect-video bg-fade flex flex-col justify-end text-white md:mb-4">
+              <img class="bg-image" src="/assets/images/img2.jpg" alt="Some image">
+              <div class="font-bold mb-2">
+                Рост цен на коммунальные услуги ударит по благополучию казахстанцев...
+              </div>
+              <div class="flex gap-2">
+                <img src="/assets/icons/clock.svg" alt="Clock">
+                07.07.2023 9:30
+              </div>
+            </div>
+            <div class="p-4 w-full box aspect-video bg-fade flex flex-col justify-end text-white ">
+              <img class="bg-image" src="/assets/images/img2.jpg" alt="Some image">
+              <div class="font-bold mb-2">
+                Рост цен на коммунальные услуги ударит по благополучию казахстанцев...
+              </div>
+              <div class="flex gap-2">
+                <img src="/assets/icons/clock.svg" alt="Clock">
+                07.07.2023 9:30
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="mt-12 px-2 md:px-4">
+        <div class="flex items-center justify-between mb-6">
+          <div class="flex gap-3 items-center text-lg font-secondary font-bold">
+            <img src="/assets/images/logo-small.png" alt="">
+            Новости
+          </div>
+          <a class="flex items-center gap-2" href="#">
+            Посмотреть все
+            <svg width="21" height="8" viewBox="0 0 21 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M20.3536 4.35355C20.5488 4.15829 20.5488 3.84171 20.3536 3.64645L17.1716 0.464466C16.9763 0.269204 16.6597 0.269204 16.4645 0.464466C16.2692 0.659728 16.2692 0.976311 16.4645 1.17157L19.2929 4L16.4645 6.82843C16.2692 7.02369 16.2692 7.34027 16.4645 7.53553C16.6597 7.7308 16.9763 7.7308 17.1716 7.53553L20.3536 4.35355ZM0 4.5H20V3.5H0V4.5Z" fill="#0D0D0D"/>
+            </svg>              
+          </a>
+        </div>
+        <div class="w-full flex justify-between gap-3 mb-20">
+          <div class="card shadow-lg flex flex-col flex-1">
+            <div class="h-64">
+              <img class="object-cover w-full h-full" src="/assets/images/img2.jpg" alt="image">
+            </div>
+            <div class="font-bold text-lg p-2">
+              Рост цен на коммунальные услуги ударит по благополучию казахстанцев, цены подскочили
+            </div>
+            <div class="flex mt-auto gap-2 items-center text-sm font-light mt-3 p-2">
+              <img src="/assets/icons/clock-w.svg" alt="Clock">
+              07.07.2023 9:30
+            </div>
+          </div>
+          <div class="card shadow-lg flex flex-col flex-1">
+            <div class="h-64">
+              <img class="object-cover w-full h-full" src="/assets/images/img3.jpeg" alt="image">
+            </div>
+            <div class="font-bold text-lg p-2">
+              День столицы в Казахстане
+            </div>
+            <div class="flex mt-auto gap-2 items-center text-sm font-light mt-3 p-2">
+              <img src="/assets/icons/clock-w.svg" alt="Clock">
+              07.07.2023 9:30
+            </div>
+          </div>
+          <div class="card shadow-lg flex flex-col flex-1">
+            <div class="h-64">
+              <img class="object-cover w-full h-full" src="/assets/images/img4.jpeg" alt="image">
+            </div>
+            <div class="font-bold text-lg p-2">
+              Марк Цукерберг запустил социальную сеть Threads
+            </div>
+            <div class="flex mt-auto gap-2 items-center text-sm font-light mt-3 p-2">
+              <img src="/assets/icons/clock-w.svg" alt="Clock">
+              07.07.2023 9:30
+            </div>
+          </div>
+        </div>
+        <div class="h-px w-2/5 bg-primary mb-6"></div>
+        <div class="flex items-center justify-between mb-6">
+          <div class="flex gap-3 items-center text-lg font-secondary font-bold">
+            <img src="/assets/images/logo-small.png" alt="">
+            Репортажи
+          </div>
+          <a class="flex items-center gap-2" href="#">
+            Посмотреть все
+            <svg width="21" height="8" viewBox="0 0 21 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M20.3536 4.35355C20.5488 4.15829 20.5488 3.84171 20.3536 3.64645L17.1716 0.464466C16.9763 0.269204 16.6597 0.269204 16.4645 0.464466C16.2692 0.659728 16.2692 0.976311 16.4645 1.17157L19.2929 4L16.4645 6.82843C16.2692 7.02369 16.2692 7.34027 16.4645 7.53553C16.6597 7.7308 16.9763 7.7308 17.1716 7.53553L20.3536 4.35355ZM0 4.5H20V3.5H0V4.5Z" fill="#0D0D0D"/>
+            </svg>              
+          </a>
+        </div>
+        <div class="w-full flex justify-between gap-3 mb-20">
+          <div class="card shadow-lg flex flex-col flex-1">
+            <div class="h-64">
+              <img class="object-cover w-full h-full" src="/assets/images/img2.jpg" alt="image">
+            </div>
+            <div class="font-bold text-lg p-2">
+              Рост цен на коммунальные услуги ударит по благополучию казахстанцев, цены подскочили
+            </div>
+            <div class="flex mt-auto gap-2 items-center text-sm font-light mt-3 p-2">
+              <img src="/assets/icons/clock-w.svg" alt="Clock">
+              07.07.2023 9:30
+            </div>
+          </div>
+          <div class="card shadow-lg flex flex-col flex-1">
+            <div class="h-64">
+              <img class="object-cover w-full h-full" src="/assets/images/img3.jpeg" alt="image">
+            </div>
+            <div class="font-bold text-lg p-2">
+              День столицы в Казахстане
+            </div>
+            <div class="flex mt-auto gap-2 items-center text-sm font-light mt-3 p-2">
+              <img src="/assets/icons/clock-w.svg" alt="Clock">
+              07.07.2023 9:30
+            </div>
+          </div>
+          <div class="card shadow-lg flex flex-col flex-1">
+            <div class="h-64">
+              <img class="object-cover w-full h-full" src="/assets/images/img4.jpeg" alt="image">
+            </div>
+            <div class="font-bold text-lg p-2">
+              Марк Цукерберг запустил социальную сеть Threads
+            </div>
+            <div class="flex mt-auto gap-2 items-center text-sm font-light mt-3 p-2">
+              <img src="/assets/icons/clock-w.svg" alt="Clock">
+              07.07.2023 9:30
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+  </main>
+  <footer></footer>
+  <script>
+    const burger = document.querySelector('.hamburger');
+    const nav = document.querySelector('nav');
+
+    burger.addEventListener('click', function() {
+      if(nav.classList.contains("open")) {
+        burger.classList.remove("open");
+        nav.classList.remove("open");
+        document.body.classList.remove("locked");
+      } else {
+        burger.classList.add("open");
+        nav.classList.add("open");
+        document.body.classList.add("locked");
+      }
+    });
+  </script>
+  <script src="/js/index.js"></script>
+</body>
+</html>

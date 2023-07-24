@@ -5,6 +5,7 @@
 }
 
 html, body {
+  scroll-behavior: smooth;
   font-family: 'Montserrat', sans-serif;
 }
 
@@ -107,12 +108,17 @@ body.locked {
   } 
 }
 
-nav.open {
+nav-component.open {
   right: 0;
 }
 
 .box {
   min-width: 280px;
+}
+
+.swiper {
+  --swiper-navigation-size: 24px;
+  --swiper-theme-color: hsla(206, 23%, 28%, 1);
 }
 
 @media screen and (min-width: 776px) {

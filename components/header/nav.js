@@ -8,8 +8,8 @@ class Nav extends HTMLElement {
     this.style.minHeight = "146px"
       this.innerHTML = `
         <ul class="w-52 bg-white md:w-full shadow-xl flex flex-col py-3 md:py-6 rounded-3xl md:rounded-none">
-          <li class="gradient-bg">
-            <a href="#news" class="block 2xl:pl-14 xl:pl-12 md:pl-2 pl-8 py-2 md:py-4">
+          <li class="gradient-bg" id="news-nav">
+            <a href="/news.html" class="block 2xl:pl-14 xl:pl-12 md:pl-2 pl-8 py-2 md:py-4">
               новости
             </a>
           </li>

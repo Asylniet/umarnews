@@ -7,9 +7,9 @@ class Header extends HTMLElement {
       this.innerHTML = `
       <header class="w-full p-2 bg-primary mb-20 sm:mb-0">
         <div class="wrapper flex items-center justify-between relative">
-          <div class="logo w-32 sm:w-1/4 lg:w-1/5 2xl:w-1/6 flex 2xl:pl-8 xl:pl-6" style="min-width: 146px;">
+          <a href="/" class="logo w-32 sm:w-1/4 lg:w-1/5 2xl:w-1/6 flex 2xl:pl-8 xl:pl-6" style="min-width: 146px;">
             <img class="max-w-full" src="/assets/images/logo.png" alt="Umarovnews">
-          </div>
+          </a>
           <div class="md:w-3/4 lg:w-4/5 2xl:w-5/6 flex items-center justify-end sm:justify-between px-2 md:px-4 left-1 gap-2">
             <div class="hidden sm:block text-xs md:text-base font-secondary font-bold">
               <div>новости</div>

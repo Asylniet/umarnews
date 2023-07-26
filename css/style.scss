@@ -10,7 +10,28 @@ html, body {
 }
 
 body.locked {
+  overflow-y: hidden;
   max-height: 100vh;
+}
+
+main {
+  padding-top: 52px;
+}
+
+@media screen and (min-width: 639px) {
+  main {
+    padding-top: 72px;
+  }
+}
+
+@media screen and (min-width: 767px) {
+  main {
+    padding-top: 88px;
+  }
+}
+
+.transparent-click {
+  -webkit-tap-highlight-color: transparent;
 }
 
 .list-pl {
@@ -119,6 +140,45 @@ nav-component.open {
 .swiper {
   --swiper-navigation-size: 24px;
   --swiper-theme-color: hsla(206, 23%, 28%, 1);
+}
+
+.icon {
+  width: 35px;
+  height: 35px;
+}
+
+.card:hover {
+  img.object-cover {
+    transform: scale(1.05);
+  }
+}
+
+.heart {
+  width: 1.5rem;
+  height: 1.5rem;
+  cursor: pointer;
+  transition: 0.2s cubic-bezier(.78,-0.46,.17,1.41);
+  .inner, .outer {
+    transition: 0.2s cubic-bezier(.78,-0.46,.17,1.41);
+  }
+  &.liked {
+    .inner {
+      fill: #FFF386;
+    }
+    .outer {
+      stroke-width: 5px;
+      stroke: #69B6E0;
+      fill: #69B6E0;
+    }
+  }
+  &:hover {
+    .outer {
+      stroke: #287FAF;
+    }
+  }
+  &:active {
+    transform: scale(0.9);
+  }
 }
 
 @media screen and (min-width: 776px) {

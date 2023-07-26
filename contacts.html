@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Umarovnews</title>
+
+  <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
+  />
+  <link rel="stylesheet" href="/css/style.css">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Unbounded:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="/js/tawilwind.config.js"></script>
+</head>
+<body>
+  <header-component></header-component>
+  <main class="wrapper flex items-start justify-between">
+    <nav-component></nav-component>
+    <div class="w-full md:w-3/4 lg:w-4/5 2xl:w-5/6 px-2 md:px-4 pt-10">
+      <div class="font-secondary text-4xl mb-6">
+        Контакты
+      </div>
+      <p>
+        <strong>Адрес:</strong> Казахстан, город Уральск, микр-н Строитель, дом 1А, кв. 14.
+      </p>
+      <section class="bg-primary p-4 md:p-8 rounded-lg text-xl w-fit my-12">
+        <div class="flex gap-3 mb-4">
+          <img src="/assets/icons/mail.svg" alt="mail" class="w-6">
+          <a class="hover:underline" href="mailto:umarovnews.kz@gmail.com"><strong>umarovnews.kz@gmail.com</strong></a>
+        </div>
+        <div class="flex gap-3">
+          <img src="/assets/icons/phone.svg" alt="mail" class="w-6">
+          <img src="/assets/icons/whatsapp-color.svg" alt="mail" class="w-6">
+          <a class="hover:underline" href="tel:+77058712335"><strong>+7 (705) 871 23 35</strong></a>
+        </div>
+      </section>
+      <p class="mb-4 max-w-[700px]">
+        <strong>Юридический адрес: </strong> Казахстан, Западно-Казахстанская область, город Уральск, микрорайона Строитель, дом 1А, кв. 14, почтовый индекс 090003 
+      </p>
+      <p class="max-w-[700px]">
+        <strong>Фактический адрес: </strong> Казахстан, Западно-Казахстанская область, город Уральск, микрорайона Строитель, дом 1А, кв. 14, почтовый индекс 090003
+      </p>
+    </div>
+  </main>
+  <footer-component></footer-component>
+  <style>
+    #contacts-nav {
+      background: linear-gradient(180deg, rgba(255, 243, 134, 0) 0%, #FFF386 100%);
+    }
+  </style>
+  <script src="/components/footer.js"></script>
+  <script src="/components/header/header.js"></script>
+  <script src="/components/header/nav.js"></script>
+  <script src="/components/box/box.js"></script>
+  <script src="/components/box/box_list.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+  <script src="/js/index.js"></script>
+  <script src="/js/news.js"></script>
+</body>
+</html>

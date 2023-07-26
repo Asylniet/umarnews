@@ -22,10 +22,11 @@
   <header-component></header-component>
   <main class="wrapper flex items-start justify-between">
     <nav-component></nav-component>
+    <button-up-component></button-up-component>
     <div class="w-full md:w-3/4 lg:w-4/5 2xl:w-5/6">
       <section class="flex justify-between items-start p-4">
-        <div class="w-11/12">
-          <div class="w-full aspect-video sm:h-auto h-44 mb-10">
+        <div class="w-full sm:w-[90%]">
+          <div class="w-full aspect-video md:h-auto sm:h-40 sm:mb-10">
             <div class="main-box w-full h-full p-4 bg-fade flex flex-col justify-end text-white">
               <img class="bg-image" src="/assets/images/img2.jpg" alt="Some image">
               <div class="w-5/6 text-base sm:text-xl md:text-2xl lg:text-3xl xl:text-4xl mb-4">
@@ -35,6 +36,19 @@
                 <img class="h-3 sm:h-auto" src="/assets/icons/clock.svg" alt="Clock">
                 07.07.2023 9:30
               </div>
+            </div>
+          </div>
+          <div class="sm:hidden flex my-6 gap-4">
+            <div class="flex justify-center items-center gap-2">
+              <img class="w-6" src="/assets/icons/eye.svg" alt="">
+              1165
+            </div>
+            <div class="heart-wrapper flex justify-center items-center gap-2 order-3">
+              <heart-icon></heart-icon>
+              <span class="heart_number">500</span>
+            </div>
+            <div class="flex justify-center items-center ml-auto">
+              <share-icon></share-icon>
             </div>
           </div>
           <p class="mt-4">
@@ -94,11 +108,32 @@
           <p class="mt-4">
             Экономист Шолпан Айтенова, анализирующая социальную политику правительства, считает, что далеко не все выделенные государством деньги шли на ремонт инфраструктуры. Если это так, то масштаб этого ремонта был крайне мал.
           </p>
-          <p class="rounded-lg bg-primary p-4 my-8">
+          <p class="rounded-lg bg-primary p-4 mt-8">
             «Мы снова сталкиваемся с проблемами качества управления, коррупции, прозрачности и отсутствия общественного контроля», − подчеркнула она.
           </p>
+          <div class="flex mb-6 mt-2 gap-4 justify-end sm:justify-between sm:flex-row-reverse">
+            <div class="flex justify-center items-center ml-auto">
+              <share-icon></share-icon>
+            </div>
+            <div class="heart-wrapper flex justify-center items-center gap-2">
+              <heart-icon></heart-icon>
+              <span class="heart_number">500</span>
+            </div>
+          </div>
         </div>
-        <div class="w-1/12"></div>
+        <div class="hidden sm:block w-[10%]">
+          <div class="flex justify-center items-center gap-2">
+            <img class="w-6" src="/assets/icons/eye.svg" alt="">
+            1165
+          </div>
+          <div class="heart-wrapper flex justify-center items-center gap-2 mt-2">
+            <heart-icon></heart-icon>
+            <span class="heart_number">500</span>
+          </div>
+          <div class="flex justify-center items-center mt-4">
+            <share-icon></share-icon>
+          </div>
+        </div>
       </section>
       <section class="mt-12 px-2 md:px-4">
         <box-list-component title="Статьи из этой категории" id="news" href="/news.html" last="true">
@@ -115,12 +150,16 @@
       background: linear-gradient(180deg, rgba(255, 243, 134, 0) 0%, #FFF386 100%);
     }
   </style>
+  <script src="/components/shareIcon.js"></script>
+  <script src="/components/heartIcon.js"></script>
   <script src="/components/footer.js"></script>
   <script src="/components/header/header.js"></script>
   <script src="/components/header/nav.js"></script>
   <script src="/components/box/box.js"></script>
   <script src="/components/box/box_list.js"></script>
+  <script src="/components/buttonUp.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
   <script src="/js/index.js"></script>
+  <script src="/js/some_news.js"></script>
 </body>
 </html>

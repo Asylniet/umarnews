@@ -10,8 +10,8 @@ class Box extends HTMLElement {
     const image = this.getAttribute("img");
     const href = this.getAttribute('href');
       this.innerHTML = `
-        <a href="${href}" class="h-32 md:h-40 lg:h-56 xl:h-64 w-full" style="min-width: 200px;">
-          <img class="object-cover w-full h-full" src="/assets/images/${image}" alt="${title}">
+        <a href="${href}" class="h-32 md:h-40 lg:h-56 xl:h-64 w-full overflow-hidden" style="min-width: 200px;">
+          <img class="object-cover w-full h-full transition" src="/assets/images/${image}" alt="${title}">
         </a>
         <div class="font-medium text-sm sm:text-base p-2">
           ${title}

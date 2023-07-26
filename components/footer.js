@@ -14,9 +14,9 @@ class Footer extends HTMLElement {
               <img class="max-w-full object-contain" src="/assets/images/logo-white.png" alt="Umarovnews">
             </div>
             <div class="text-xs md:text-base font-secondary">
-              <div>новости</div>
-              <div>интервью</div>
-              <div>расследования</div>
+              <a href="/news.html" class="block hover:underline">новости</a>
+              <a href="#" class="block hover:underline">интервью</a>
+              <a href="#" class="block hover:underline">расследования</a>
             </div>
           </div>
           <ul 
@@ -24,13 +24,19 @@ class Footer extends HTMLElement {
             style="display: grid; grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));"
           >
             <li>
+              <a class="hover:underline" href="/about.html">
               о нас
+              </a>
             </li>
             <li>
+              <a class="hover:underline" href="/contacts.html">
               контакты
+              </a>
             </li>
             <li>
+              <a class="hover:underline" href="/news.html">
               новости
+              </a>
             </li>
             <li>
               репортажи
@@ -57,8 +63,8 @@ class Footer extends HTMLElement {
         </div>
         <div class="w-full lg:w-1/4 mt-10 lg:mt-0 flex justify-between items-start flex-wrap lg:block gap-4">
           <div class="mb-2 sm:mb-6">
-            <a class="text-xl font-bold block lg:text-right" href="tel:+77058712335">+7 (705) 871 23 35</a>
-            <a class="text-md font-bold block lg:text-right" href="mailto:umarovnews.kz@gmail.com">umarovnews.kz@gmail.com</a>
+            <a class="text-xl font-bold block lg:text-right hover:underline" href="tel:+77058712335">+7 (705) 871 23 35</a>
+            <a class="text-md font-bold block lg:text-right hover:underline" href="mailto:umarovnews.kz@gmail.com">umarovnews.kz@gmail.com</a>
           </div>
           <div class="w-full flex justify-end gap-6">
             <a href="#" class="bg-white w-8 sm:w-11 aspect-square rounded-lg">

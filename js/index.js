@@ -2,48 +2,7 @@ window.addEventListener('DOMContentLoaded', () => {
   mainWrapperResize();
   window.addEventListener("resize", mainWrapperResize());
   hamburger();
-  const swiper = new Swiper('.swiper', {
-    // Optional parameters
-    direction: 'horizontal',
-    loop: false,
-    
-    // Navigation arrows
-    navigation: {
-      nextEl: '.swiper-button-next',
-      prevEl: '.swiper-button-prev',
-    },
-
-    breakpoints: {
-      // when window width is >= 320px
-      320: {
-        slidesPerView: 1,
-        spaceBetween: 10
-      },
-      // when window width is >= 480px
-      480: {
-        slidesPerView: 3,
-        spaceBetween: 10
-      },
-      // when window width is >= 640px
-      640: {
-        slidesPerView: 4,
-        spaceBetween: 20
-      }
-    }
-  });
-  const swiperCategory = new Swiper('.swiper.swiper-category', {
-    // Optional parameters
-    direction: 'horizontal',
-    loop: false,
-    slidesPerView: 1,
-    spaceBetween: 10,
-    
-    // Navigation arrows
-    navigation: {
-      nextEl: '.swiper-button-next',
-      prevEl: '.swiper-button-prev',
-    },
-  });
+  hideSearch();
 });
 
 function mainWrapperResize() {
@@ -58,7 +17,6 @@ function mainWrapperResize() {
 function hamburger() {
   const burger = document.querySelector('.hamburger');
   const nav = document.querySelector('nav-component');
-  
   
   burger.removeEventListener('click', burgerClick);
   burger.addEventListener('click', burgerClick);
@@ -83,5 +41,23 @@ function burgerClick() {
     this.classList.add("open");
     nav.classList.add("open");
     document.body.classList.add("locked");
+  }
+}
+
+function hideSearch() {
+  if(window.innerWidth < 640) {
+    /* When the user scrolls down, hide the navbar. When the user scrolls up, show the navbar */
+    var prevScrollpos = window.scrollY;
+    window.onscroll = function() {
+      var currentScrollPos = window.scrollY;
+      if (prevScrollpos > currentScrollPos) {
+        document.getElementById("search").classList.add("top-14");
+        document.getElementById("search").classList.remove("-top-16");
+      } else {
+        document.getElementById("search").classList.add("-top-16");
+        document.getElementById("search").classList.remove("top-14");
+      }
+      prevScrollpos = currentScrollPos;
+    }
   }
 }

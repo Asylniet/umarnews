@@ -16,7 +16,7 @@ class Header extends HTMLElement {
               <a href="#" class="block hover:underline">интервью</a>
               <a href="#" class="block hover:underline">расследования</a>
             </div>
-            <div class="sm:static absolute left-0 -top-16 w-full sm:w-3/5 transition-all" id="search">
+            <div class="-z-[1] sm:z-1 sm:static absolute left-0 -top-16 w-full sm:w-3/5 transition-all" id="search">
               <div class="relative flex items-center gap-4 rounded-full bg-white py-1 px-4 h-14 border sm:border-none">
                 <img class="h-6 aspect-square" src="/assets/icons/search.svg" alt="search">
                 <input class="w-full focus:border-none focus:outline-none" type="text" placeholder="День столицы...">

@@ -4,7 +4,7 @@ class ButtonUp extends HTMLElement {
   }
 
   connectedCallback() {
-      this.className = "fixed bottom-2 right-2 md:bottom-4 md:right-4 rounded-full group cursor-pointer transparent-click";
+      this.className = "fixed bottom-2 right-2 md:bottom-4 md:right-4 rounded-full group cursor-pointer transparent-click z-10";
       this.addEventListener('click', function() {
         window.scrollTo({
           top: 0,

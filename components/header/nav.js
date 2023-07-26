@@ -4,7 +4,7 @@ class Nav extends HTMLElement {
   }
 
   connectedCallback() {
-    this.className = "fixed z-10 md:sticky md:w-1/4 lg:w-1/5 2xl:w-1/6 top-[3.25rem] sm:top-[4.5rem] md:top-[5.5rem] -right-full md:left-0 transition-all mb-4";
+    this.className = "fixed z-20 md:sticky md:w-1/4 lg:w-1/5 2xl:w-1/6 top-[3.25rem] sm:top-[4.5rem] md:top-[5.5rem] -right-full md:left-0 transition-all mb-4";
     this.style.minHeight = "146px"
       this.innerHTML = `
         <ul class="w-52 bg-white md:w-full shadow-xl flex flex-col py-3 md:py-6 rounded-3xl md:rounded-none rounded-tr-none">

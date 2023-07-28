@@ -3,7 +3,38 @@ class Footer extends HTMLElement {
       super();
   }
 
+  languageMap = {
+    ru : {
+      news: "новости",
+      interview: "интервью",
+      investigation: "расследования",
+      history: "история",
+      report: "репортаж",
+      society: "общество",
+      politics: "политика",
+      opinion: "мнение",
+      about: "о нас",
+      contacts: "контакты",
+      text: "Полное или частичное копирование материалов сайта в коммерческих целях допускается только с письменного разрешения владельца сайта.",
+    },
+    kz : {
+      news: "жаңалықтар",
+      interview: "сұхбат",
+      investigation: "тергеу",
+      history: "тарих",
+      report: "есеп беру",
+      society: "қоғам",
+      politics: "саясат",
+      opinion: "пікір",
+      about: "біз туралы",
+      contacts: "байланыс",
+      text: "Коммерциялық мақсатта сайт материалдарын толық немесе ішінара көшіруге Сайт иесінің жазбаша рұқсатымен ғана жол беріледі.",
+    },
+  }
+
   connectedCallback() {
+    const language = document.querySelector('html').getAttribute("lang");
+    const map = this.languageMap[language];
       this.innerHTML = `
       <footer class="bg-[#287FAF] w-full text-white p-6">
     <div class="flex flex-col wrapper">
@@ -14,9 +45,9 @@ class Footer extends HTMLElement {
               <img class="max-w-full object-contain" src="/assets/images/logo-white.png" alt="Umarovnews">
             </div>
             <div class="text-xs md:text-base font-secondary">
-              <a href="/news.html" class="block hover:underline">новости</a>
-              <a href="#" class="block hover:underline">интервью</a>
-              <a href="#" class="block hover:underline">расследования</a>
+              <a href="/${language}/news.html" class="block hover:underline">${map.news}</a>
+              <a href="#" class="block hover:underline">${map.interview}</a>
+              <a href="#" class="block hover:underline">${map.investigation}</a>
             </div>
           </div>
           <ul 
@@ -24,40 +55,40 @@ class Footer extends HTMLElement {
             style="display: grid; grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));"
           >
             <li>
-              <a class="hover:underline" href="/about.html">
-              о нас
+              <a class="hover:underline" href="/${language}/about.html">
+              ${map.about}
               </a>
             </li>
             <li>
-              <a class="hover:underline" href="/contacts.html">
-              контакты
+              <a class="hover:underline" href="/${language}/contacts.html">
+              ${map.contacts}
               </a>
             </li>
             <li>
-              <a class="hover:underline" href="/news.html">
-              новости
+              <a class="hover:underline" href="/${language}/news.html">
+              ${map.news}
               </a>
             </li>
             <li>
-              репортажи
+            ${map.report}
             </li>
             <li>
-              интервью
+            ${map.interview}
             </li>
             <li>
-              история
+            ${map.history}
             </li>
             <li>
-              общество
+            ${map.society}
             </li>
             <li>
-              политика
+            ${map.politics}
             </li>
             <li>
-              мнение
+            ${map.opinion}
             </li>
             <li>
-              расследования
+            ${map.investigation}
             </li>
           </ul>
         </div>
@@ -76,7 +107,7 @@ class Footer extends HTMLElement {
           </div>
         </div>
       </div>
-      <span class="text-xs sm:text-sm md:text-base mt-4 sm:mt-8 md:mt-10">Полное или частичное копирование материалов сайта в коммерческих целях допускается только с письменного разрешения владельца сайта.</span>
+      <span class="text-xs sm:text-sm md:text-base mt-4 sm:mt-8 md:mt-10">${map.text}</span>
       <span class="text-xs sm:text-sm md:text-base mt-2 sm:mt-4 md:mt-6">©umarovnews2023</span>
     </div>
   </footer>

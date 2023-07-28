@@ -9,6 +9,10 @@ html, body {
   font-family: 'Montserrat', sans-serif;
 }
 
+.font-secondary:lang(kz) {
+  font-family: 'Roboto', sans-serif;
+}
+
 body.locked {
   overflow-y: hidden;
   max-height: 100vh;

@@ -10,7 +10,7 @@ class Header extends HTMLElement {
       investigation: "расследования",
       searchPlaceholder: "День столицы...",
       flag: "kz",
-      language: "Қазақша",
+      language: "Қаз",
     },
     kz : {
       news: "жаңалықтар",
@@ -18,7 +18,7 @@ class Header extends HTMLElement {
       investigation: "тергеу",
       searchPlaceholder: "Астана күні...",
       flag: "ru",
-      language: "Русский",
+      language: "Рус",
     },
   }
 
@@ -45,8 +45,7 @@ class Header extends HTMLElement {
               </div>
             </div>
             <a href="${link}" class="button link flex items-center gap-2">
-              <img style="width: 2rem" src="/assets/images/${map.flag}_flag.jpg" alt="language">
-              <span class="hidden md:inline">${map.language}</span>
+              <span class="inline">${map.language}</span>
             </a>
             <div class="flex md:hidden hamburger">
               <div></div>
